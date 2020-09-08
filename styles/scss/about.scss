@@ -1,0 +1,24 @@
+@import './include/nav';
+@import './include/footer';
+@import './include/_default';
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.image {
+  width: 100%;
+  text-align: right;
+  img {
+    z-index: -1;
+    height: 30vh;
+  }
+  
+}
+
+
+
+

@@ -1,0 +1,386 @@
+<!doctype html>
+
+<!-- 
+All HTML writing belongs to the code creator Jacob Cuomo 
+Any redistribution of it without his consent can lead to 
+legal troubles. Please use with caution. 
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jacob's Software Development - Home</title>
+  <meta name="description" content="Java, C#, and Web Developer">
+  <meta name="author" content="Jacob Cuomo">
+
+  <link rel="stylesheet" href="styles/css/index.css">
+
+  <!-- Find a better image for favicon -->
+  <link rel="shortcut icon" type="image/png" href="images/drawing_star_logo.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  
+  <script src="nav.js"></script>
+  <script src="https://unpkg.com/scrollbooster@1.1.0/dist/scrollbooster.min.js"></script>
+  <script defer src="scroll.js"></script>
+  <script src="https://kit.fontawesome.com/bb0278a688.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="topNav" id="topNav">
+    <nav>
+      <a><button class="active" type="button">Home</button></a>
+      <a href="about.html"><button type="button">About</button></a>
+      <a href="contact.html"><button class="last" type="button">Contact</button></a>
+      <a class="icon" onclick="hamburgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </div>
+
+
+  <div class="centerContent">
+    <div class="content">
+      <div class="smaller">
+        <h1>Hello, I'm Jacob.</h1>
+        <h3>Building and debugging software since 2014.</h3>
+  
+        <h3>Event runner, blog writer, and Dean's List student pursuing my bachelors in computer science and mathematics.</h3>
+        <h3>What I'm working on currently:</h3>
+        <ul>
+          <li>CodeDay: assisting students and coming up with new, fun ways for the world's best virtual internships and hackathons.</li>
+          <li>Project-C: a way of stopping California wildfires using technology.</li>
+          <li>TMIX: a platform that connects all popular livestreaming services into one. Have one tab for any entertainment.</li>
+          <li>Octoslip: a fun mobile game where you must dodge oncoming obstacles and collect coins for customization.</li>
+          <li>and other small projects...</li>
+        </ul>
+      </div>
+
+      <br>
+
+      <h2 style="text-align: center;">Projects</h2>
+      <h4 style="text-align: center;">past projects show a More button and current projects show a Soon button</h4>
+    </div>
+
+    <!-- Programming Langauges -->
+    <div class="flex">
+      <div class="expertise">
+        <div class="imageText">
+          <img src="https://icongr.am/devicon/java-original.svg" style="height: 75%; width: 75%;">
+          <h3>Java</h3>
+        </div>
+        <div id="java" class="programProjects">
+          <i class="fas fa-chevron-left" onclick="slide('java', 0)"></i>
+            <div class="program">
+              <div style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                <img src="images/jtracker.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              </div>
+              <div class="details">   
+                <div class="info">
+                  <h3>JTracker</h3>
+                  <p>Tracks websites for changes</p>
+                </div>       
+                <a href="https://github.com/bobcat4848/JTracker"><button type="button">More</button></a>
+              </div>
+            </div>
+            <div class="program">
+              <div class="img" style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                <img src="images/familyfriend.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              </div>
+              <div class="details">   
+                <div class="info">
+                  <h3>Family Friend</h3>
+                  <p>A daily, weekly, and monthly family activity reporter</p>
+                </div>       
+                <a href="https://github.com/bobcat4848/Family-Friend"><button type="button">More</button></a>
+              </div>
+            </div>
+            <div class="program">
+              <div class="img" style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                <img src="images/inventorysystem.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              </div>
+              <div class="details">   
+                <div class="info">
+                  <h3>Inventory System</h3>
+                  <p>UI System for managing product stock</p>
+                </div>       
+                <a href="https://github.com/bobcat4848/CheckInOut-System"><button type="button">More</button></a>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right" onclick="slide('java', 1)"></i>
+        </div>
+      </div>
+
+      <div class="expertise">
+        <div class="imageText">
+          <img src="https://icongr.am/devicon/csharp-original.svg" style="height: 75%; width: 75%;">
+          <h3>C#</h3>
+        </div>
+        <div id="csharp" class="programProjects">
+          <i class="fas fa-chevron-left" onclick="slide('csharp', 0)"></i>
+          <div class="program">
+            <div style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              <img src="images/octoslip.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+            </div>
+            <div class="details">   
+              <div class="info">
+                <h3>Octoslip</h3>
+                <p>Dodge oncoming obstacles in this mobile android game</p>
+              </div>       
+              <a href=""><button disabled type="button">Soon</button></a>
+            </div>
+          </div>
+          <div class="program">
+            <div style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              <img src="images/grapplegame.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+            </div>
+            <div class="details">   
+              <div class="info">
+                <h3>Grappler</h3>
+                <p>Collect coins by grappeling to floating islands, made in 24 hours</p>
+              </div>       
+              <a href="https://drive.google.com/file/d/15BnuLmz_dhSshw3u5mMASBIxPnGAQqyY/view?usp=sharing"><button type="button">More</button></a>
+            </div>
+          </div>
+          <div class="program">
+            <div style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              <img src="images/fruitykarnage.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+            </div>
+            <div class="details">   
+              <div class="info">
+                <h3>Fruity Karnage</h3>
+                <p>Fight off waves of incoming fruit enemies, made in 24 hours</p>
+              </div>       
+              <a href="https://drive.google.com/file/d/1X-LeOVNsvL0RC4ufPu3-lO9zyRKaG2MJ/view?usp=sharing"><button type="button">More</button></a>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right" onclick="slide('csharp', 1)"></i>
+        </div>
+      </div>
+      
+      <div class="expertise">
+        <div class="imageText">
+          <img src="images/htmlcssjs.png" style="height: 75%; width: 75%;">
+          <h3>Web</h3>
+        </div>
+        <div id="web" class="programProjects">
+          <i class="fas fa-chevron-left" onclick="slide('web', 0)"></i>
+          <div class="program">
+            <div style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              <img src="images/tmix.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+            </div>
+            <div class="details">   
+              <div class="info">
+                <h3>TMix</h3>
+                <p>Combines popular streaming platforms into one site</p>
+              </div>       
+              <a href=""><button disabled type="button">Soon</button></a>
+            </div>
+          </div>
+
+          <div class="program">
+            <div style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              <img src="images/mywebsite.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+            </div>
+            <div class="details">   
+              <div class="info">
+                <h3>Personal Site</h3>
+                <p>All aspects of this website are made by me</p>
+              </div>       
+              <a href="/"><button type="button">More</button></a>
+            </div>
+          </div>
+
+          <div class="program">
+            <div style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              <img src="images/lizzycards.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+            </div>
+            <div class="details">   
+              <div class="info">
+                <h3>Card Showcase</h3>
+                <p>Shows varying greeting cards for an artist</p>
+              </div>       
+              <a href="https://romantic-borg-022427.netlify.com"><button type="button">More</button></a>
+            </div>
+          </div>
+
+          <div class="program">
+            <div style="background-color: black; width: 100%; height: 70%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+              <img src="images/gamehost.JPG" style="object-fit: cover; width: 100%; height: 100%; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+            </div>
+            <div class="details">   
+              <div class="info">
+                <h3>Cloud Host</h3>
+                <p>Deploy game and application servers based on user need</p>
+              </div>       
+              <a href="https://brave-jennings-916ab8.netlify.com/"><button type="button">More</button></a>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right" onclick="slide('web', 1)"></i>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="content">
+      <h2><span>></span> More projects</h2>
+
+      <div class="threeprojects">
+        <div class="project">
+          <img src="" alt="">
+          <h2></h2>
+          <p></p>
+        </div>
+        <div class="project">
+          <img src="" alt="">
+          <h2></h2>
+          <p></p>
+        </div>
+        <div class="project">
+          <img src="" alt="">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <a href="https://github.com/bobcat4848"><button class="moreprojects" type="button">More Projects...</button></a>
+    </div>
+    -->
+
+    <div class="hero">
+      <div class="heroText">
+        <h2><span>></span> Technologies</h2>
+        <h4>There are so many technologies out there. Here are the ones that I have experience with.</h4>
+      </div>
+    </div>
+
+    <!-- Technologies -->
+    <div class="flex" style="padding-bottom: 3rem;">
+      <div class="tech">
+        <div class="imageText">
+          <img src="https://icongr.am/devicon/git-original.svg" style="height: 75%; width: 75%;">
+          <h3>Git</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src="images/unity.png" style="height: 75%; width: 72%;">
+          <h3>Unity</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src="https://icongr.am/devicon/nodejs-original.svg" style="height: 75%; width: 75%;">
+          <h3>Node.JS</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/linux-original.svg" style="height: 75%; width: 75%;">
+          <h3>Linux</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/intellij-original.svg" style="height: 75%; width: 75%;">
+          <h3>IntelliJ</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/android-original.svg" style="height: 75%; width: 75%;">
+          <h3>Android Studio</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/express-original-wordmark.svg" style="height: 75%; width: 75%;">
+          <h3>Express</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/mongodb-original.svg" style="height: 75%; width: 75%;">
+          <h3>MongoDB</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/react-original.svg" style="height: 75%; width: 75%;">
+          <h3>React</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/sass-original.svg" style="height: 75%; width: 75%;">
+          <h3>Sass</h3>
+        </div>
+      </div>
+
+      
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/ssh-original-wordmark.svg" style="height: 75%; width: 75%;">
+          <h3>SSH</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/trello-plain.svg" style="height: 75%; width: 75%;">
+          <h3>Trello</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "https://icongr.am/devicon/visualstudio-plain.svg" style="height: 75%; width: 75%;">
+          <h3>Visual Studio</h3>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="imageText">
+          <img src= "images/pug.png" style="height: 75%; width: 75%;">
+          <h3>PugJS</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footerContent">
+      <div class="footerFlex">
+        <p>Site Map</p>
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="experience.html"><li>Experience</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </div>
+      <div class="footerFlex">
+        <p>Social Media</p>
+        <ul>
+          <a href="https://github.com/bobcat4848"><li>Github</li></a>
+          <a href="https://www.linkedin.com/in/jacob-c-659937125/"><li>LinkedIn</li></a>
+          <a href="contact.html"><li>Email</li></a>
+        </ul>
+      </div>
+      <div class="footerFlex last">
+        <h5>&copy; 2020 Jacob Cuomo</h5>
+      </div>
+    </div>
+  </div>
+
+</body>

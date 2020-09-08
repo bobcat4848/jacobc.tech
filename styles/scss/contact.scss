@@ -1,0 +1,117 @@
+@import './include/nav';
+@import './include/footer';
+@import './include/_default';
+
+
+.image {
+  width: 100%;
+  text-align: right;
+  img {
+    z-index: -1;
+    height: 30vh;
+    margin-right: 1rem;
+    margin-bottom: -1rem;
+  }
+}
+
+h4 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  width: 100%;
+
+  input[type=text], input[type=email] {
+    //border: 1px solid black;
+    background-color: #0095ff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    width: 20rem;
+    height: 2rem;
+    -webkit-appearance: none; 
+    appearance: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+    caret-color: white;
+    color: white;
+    -webkit-box-shadow: 0px 1px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);
+  }
+
+
+  .two {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .flexcolumn {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .comments {
+    width: 100%;
+    text-align: center;    
+  }
+  .submit {
+    border: none;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 2rem;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(236, 155, 3);
+
+    -webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    &:hover {
+      background-color: rgb(223, 145, 2);
+    }
+    &:focus {
+      background-color: rgb(194, 126, 0);
+    }
+  }
+
+  textarea {
+    //border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: #0095ff;
+
+    width: 50%;
+    margin-right: 1rem;
+    height: 10rem;
+    padding: 0.5rem;
+    transition: 0.3s;
+    caret-color: white;
+    color: white;
+    -webkit-box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);
+  }
+
+  textarea:focus, input:focus {
+    &:not(.submit) {
+      outline: none;
+      border: 1px solid white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+
+}

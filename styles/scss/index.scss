@@ -1,0 +1,201 @@
+@import './include/nav';
+@import './include/footer';
+@import './include/_default';
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(134, 134, 134);
+
+  //
+  // Programming Languages Section
+  //
+  .expertise {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+
+    .fa-chevron-left, .fa-chevron-right{
+      position: absolute;
+      width: 8vw;
+      height: 8vh;
+      transition: ease-in-out 0.25s;
+      color: #0095ff;
+
+      &:hover {
+        color: #025c9c;
+      }
+    }
+
+    .fa-chevron-left {
+      left: 10vw;
+    }
+
+    .fa-chevron-right {
+      right: 1vw;
+    }
+
+    .imageText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      width: 10rem;
+    }
+
+    .programProjects {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: center;
+      align-items: center;
+      -webkit-overflow-scrolling: touch;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      overflow-x: scroll;
+      overflow-y: hidden;
+      width: 80%;
+      height: 100%;
+    
+      .program {
+        flex: 0 0 auto;
+        background-color: rgb(87, 86, 86);
+        height: 19rem;
+        width: 26rem;
+        margin: 5px 0 5px 1rem;
+        border-radius: 1rem;
+
+        -webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+
+        .details {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          height: 30%;
+
+          .info {
+            width: 75%;
+            height: 100%;
+            margin-top: 3px;
+          }
+        }
+
+        h3, p {
+          margin: 0 0 0 1rem;
+          color: white;
+        }
+        a {
+          width: 20%;
+          margin-top: 40px;
+        }
+        button {
+          background-color: rgb(236, 155, 3);
+          border: none;
+          border-radius: 2px;
+          color: rgb(238, 238, 238);
+          font-size: 1rem;
+          padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+          margin-left: 25px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: 0.25s;
+          &:focus:enabled {outline:0;}
+          &:hover:enabled {background-color: rgb(214, 140, 1);}
+          &:active:enabled {
+            background-color: rgb(177, 115, 1);
+            transform: translateY(2px);
+          }
+          &:disabled {
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+
+  .tech {
+    width: 12rem;
+    height: 12rem;
+    padding-top: 1rem;
+    text-align: center;    
+
+    h3 {
+      padding-top: 0;
+      margin: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    &:nth-child(odd) {
+      background-color: rgba(158, 158, 158);
+    }
+  }
+}
+
+.threeprojects {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 2rem;
+
+  .project {
+    width: 25rem;
+    height: 20rem;
+    margin-right: 5px;
+    margin-top: 1rem;
+    background-color: rgb(87, 86, 86);
+  }
+}
+
+.moreprojects {
+  margin-bottom: 5rem;
+  background-color: transparent;
+  border: 5px solid rgb(236, 155, 3);
+  border-bottom: 10px solid rgb(236, 155, 3);
+  border-radius: 15px;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  &:focus {outline:0;}
+  &:hover {background-color: rgb(236, 155, 3);}
+}
+
+.active {
+  background-color: rgb(236, 155, 3);
+}
+
+// Media Queries - makes center content take up 100% of view
+@media only screen and (max-width: 1024px) {
+  .fa-chevron-left {
+       transform: translate(-50%, 0%);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .content {
+    width: 20%;
+  }
+} 
+
+
+
+
+
+
