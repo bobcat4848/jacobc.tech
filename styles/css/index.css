@@ -11,7 +11,7 @@
 nav {
   margin: auto;
   text-align: right;
-  width: 70%;
+  width: 55%;
   padding-bottom: 1rem;
 }
 nav .icon {
@@ -58,6 +58,10 @@ nav .active {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+  nav {
+    width: 80%;
+  }
+
   .topNav a:not(:first-child) {
     display: none;
   }
@@ -106,7 +110,7 @@ nav .active {
 .footer .footerContent {
   display: flex;
   flex-flow: row wrap;
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 .footer .footerContent .last {
@@ -145,7 +149,7 @@ body {
 
 .centerContent {
   background-color: #868686;
-  width: 50%;
+  width: 55%;
   margin: auto;
   z-index: 2;
   padding-top: 2rem;
@@ -205,6 +209,25 @@ span {
     width: 100%;
   }
 }
+.smaller ul {
+  /* Unvisited link  */
+  /* Visited link    */
+  /* Mouse over link */
+  /* Selected link   */
+}
+.smaller ul a {
+  color: black;
+}
+.smaller ul a:visited {
+  color: black;
+}
+.smaller ul a:hover {
+  color: #363636;
+}
+.smaller ul a:active {
+  color: black;
+}
+
 .flex {
   display: flex;
   flex-flow: row wrap;
