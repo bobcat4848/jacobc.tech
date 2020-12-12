@@ -3,11 +3,30 @@
 @import './include/_default';
 
 .smaller ul {
+  list-style: none; /* Remove default bullets */
+  margin: 0 0 0 1em;
+  padding: 0;
+  
+  li::before {
+    content: "• ";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: black; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1.5em; /* Also needed for space (tweak if needed) */
+  }
+
   a {color:black;}         /* Unvisited link  */
   a:visited {color:black;} /* Visited link    */
   a:hover {color:rgb(54, 54, 54);}   /* Mouse over link */
   a:active {color:black;}  /* Selected link   */
+
 }
+
+.smaller {
+
+}
+
+
 
 .flex {
   display: flex;
