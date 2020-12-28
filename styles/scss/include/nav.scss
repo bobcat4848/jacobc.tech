@@ -11,7 +11,7 @@
 nav {
   margin: auto;
   text-align: right;
-  width: 55%;
+  width: 58%;
   padding-bottom: 1rem;
 
 
@@ -43,11 +43,38 @@ nav {
     font-weight: bold;
     cursor: pointer;
     transition: 0.25s;
-    text-shadow:
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
+
+    position: relative;
+    //display:block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    overflow:hidden;
+    z-index: 1;
+    cursor: pointer;
+    
+    transition:         0.15s ease-in;
+    -o-transition:      0.15s ease-in;
+    -ms-transition:     0.15s ease-in;
+    -moz-transition:    0.15s ease-in;
+    -webkit-transition: 0.15s ease-in;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      background: rgb(236, 155, 3);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 100%;
+      z-index: -1;
+      -webkit-transition: top 0.15s ease-in;
+    }
+    
+    &:hover:before {
+      top: 0;
+    }
+
     &:focus {outline:0;}
     &:not(.active) {
       &:hover {background-color: rgb(236, 155, 3);}
